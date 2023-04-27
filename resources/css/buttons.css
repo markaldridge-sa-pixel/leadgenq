@@ -1,0 +1,52 @@
+.btn-spinner,
+.btn-spinner:after {
+  border-radius: 50%;
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.btn-spinner {
+  font-size: 10px;
+  position: relative;
+  text-indent: -9999em;
+  border-top: 0.2em solid white;
+  border-right: 0.2em solid white;
+  border-bottom: 0.2em solid white;
+  border-left: 0.2em solid transparent;
+  transform: translateZ(0);
+  animation: spinning 1s infinite linear;
+}
+.btn-cardblock {
+  padding:25px;
+  height:200px;
+  width:200px;
+  background:#ecfbb6;
+  border-radius: 12px;
+  margin:5px;
+}
+.bg-yellowtint {
+  padding:25px;
+  border-radius:0px 8px 8px 0px;
+  background:rgb(86 97 179 / var(--tw-bg-opacity));
+  color:#fff;
+  max-width:512px;
+  margin: 0 auto;
+}
+.estimate-heading {
+  font-size:1.875rem;
+  margin: 15px auto;
+  justify-self: center;
+}
+.calculated-result {
+  font-size:1.875rem;
+  margin: 15px auto;
+  justify-self: center;
+}
+@keyframes spinning {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
